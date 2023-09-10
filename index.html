@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" src="./scss/style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <title></title>
+</head>
+
+<body>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!---->
+
+  <div class="header-web">
+    <div class="menu">
+      <div class="logo">
+        <!-- <img class="custom-image" src="/image/logo.png" width="100%" height="100%" /> -->
+        <img src="./image/logo.png" alt="Italian Trulli">
+      </div>
+      <div class="text-menu-desktop">
+        <a class="item-text" href="#"> Features </a>
+        <a class="item-text" href="#"> About </a>
+        <a class="item-text" href="#"> Pricing </a>
+        <a class="item-text" href="#"> Reviews </a>
+        <a class="item-text" href="#"> Contact </a>
+      </div>
+      <div class="text-menu-mobile">
+        <div class="icon-menu" onclick="open_Sidebar()">
+          <!-- <b-icon icon="menu-down" v-on:click="open_Sidebar()"></b-icon> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z" />
+            <path
+              d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </div>
+        <div class="menu-mobile" id="side-bar-mobile">
+          <div class="icon-tab-menu" onclick="close_Sidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+              class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+            </svg>
+          </div>
+          <div class="item-text">
+            <a href="#"> Features </a>
+          </div>
+          <div class="item-text">
+            <a href="#"> About </a>
+          </div>
+          <div class="item-text">
+            <a href="#"> Pricing </a>
+          </div>
+          <div class="item-text">
+            <a href="#"> Reviews </a>
+          </div>
+          <div class="item-text">
+            <a href="#"> Contact </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body-web">
+    <div class="banner">
+      <div class="row item-banner mx-0">
+        <div class="col-lg-6 col-sm-12">
+          <div>
+            <img class="logo-baner" src="./image/logo.png" width="100%" height="100%" />
+          </div>
+          <div class="text-banner">
+            <div class="text-item1 mb-4">
+              MODER AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+            </div>
+            <div class="custom-border"></div>
+            <div class="text-item2 mt-4 mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accusmsan et viverra justo commodo.
+            </div>
+            <div class="my-4">
+              <button class="button-banner btn btn-outline-light" type="button">Download</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 form-banner px-0">
+          <div>
+            <div class="custom-form">
+              <div class="text-item" style="background-color: #f5f5f5">
+                <span>Try Your</span>
+                <span class="mx-1" style="color: orange">FREE</span>
+                <span>Trial Today</span>
+              </div>
+              <div class="input-item" style="background-color: white">
+                <div class="py-3">
+                  <input class="form-control" required hide-details placeholder="Name"></input>
+                </div>
+                <div class="py-3">
+                  <input class="form-control" required hide-details placeholder="Email"></input>
+                </div>
+                <div class="py-3">
+                  <input class="form-control" required hide-details placeholder="Password"></input>
+                </div>
+              </div>
+              <div class="button-item text-center">
+                <span>Get Started</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <div class="row">
+        <div class="col-lg-2 col-sm-12">
+          <div class="custom-tab">
+            <div class="item-tab1 active">TAB 1</div>
+            <div class="item-tab2">TAB 2</div>
+            <div class="item-tab3">TAB 3</div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-12 px-5">
+          <div class="custom-text1 my-3">
+            Tabs with soft transitioning effect.
+          </div>
+          <div class="custom-text2 my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accusmsan et viverra justo commodo. Proin sodales pulvinar tempor.
+            Cum sociis natoque penatibus et dis parturient montes.
+          </div>
+          <div class="custom-text2 my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+            euismod bibendum laoreet.
+          </div>
+          <div>
+            <button class="button-download btn btn-outline-light" type="button">Download</button>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-12 fix-image">
+          <img class="" src="./image/u3.png" width="100%" height="100%" />
+        </div>
+      </div>
+    </div>
+    <div class="layout-list-section">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 fix-image-section">
+          <img class="" src="./image/u4.png" width="80%" height="100%" />
+        </div>
+        <div class="col-lg-6 col-sm-12" style="display: flex; align-items: center">
+          <div class="form-section">
+            <div class="title-section my-3">Sub list section</div>
+            <div class="custom-border-section"></div>
+            <div class="text-section my-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accusmsan et viverra justo commodo.
+            </div>
+            <div class="flex-section my-4">
+              <div class="pr-3">
+                <img class="icon-section" src="./image/icon upload.png" width="100%" height="100%" />
+              </div>
+              <div class="item-section">
+                <span class="title-item-section">Title</span>
+                <span class="text-item-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet.
+                </span>
+              </div>
+            </div>
+            <div class="flex-section my-4">
+              <div class="pr-3">
+                <img class="icon-section" src="./image/icon download.png" width="100%" height="100%" />
+              </div>
+              <div class="item-section">
+                <span class="title-item-section">Title</span>
+                <span class="text-item-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                  amet lacus accusmsan et viverra justo commodo.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layout-picture-section">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12" style="display: flex; align-items: center">
+          <div class="form-picture-section">
+            <div class="title-section my-3">Standard Picture Section</div>
+            <div class="custom-border-section"></div>
+            <div class="text-section my-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accusmsan et viverra justo commodo. Proin sodales pulvinar
+              tempor. Cum sociis natoque penatibus et dis parturient montes.
+            </div>
+            <div class="text-section my-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+              euismod bibendum laoreet.
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 image-picture-section">
+          <img class="" src="./image/u5.png" width="80%" height="100%" />
+        </div>
+      </div>
+    </div>
+    <div class="layout-awesome">
+      <div class="form-awesome my-3">
+        <div class="title-awesome text-center">WHY THIS IS AWESOME</div>
+      </div>
+      <div class="form-awesome my-3">
+        <div class="custom-dash"></div>
+      </div>
+      <div class="form-awesome my-3">
+        <div class="text-awesome text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="item-awesome">
+            <img class="icon-item" src="./image/icon idea.png" width="100%" height="100%" />
+            <div class="title-item my-3">Thoughtful Design</div>
+            <div class="text-item my-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accusmsan et viverra
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="item-awesome">
+            <img class="icon-item" src="./image/icon keyboard.png" width="100%" height="100%" />
+            <div class="title-item my-3">Well Crafted</div>
+            <div class="text-item my-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accusmsan et viverra
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm12" lg="4" sm="12">
+          <div class="item-awesome">
+            <img class="icon-item" src="./image/icon custom.png" width="100%" height="100%" />
+            <div class="title-item my-3">Easy to Customize</div>
+            <div class="text-item my-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accusmsan et viverra
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="axure-design">
+      <div class="title text-center my-3">STYLISH AXURE DESIGN</div>
+      <div class="custom-dash my-3"></div>
+      <div class="text text-center my-5">
+        Use the sections you need, remove the ones you don't. Create gorgeous
+        prototypes faster than ever!
+      </div>
+      <button class="button-download btn btn-outline-light" type="button">Download</button>
+    </div>
+    <div class="contact-us">
+      <div class="title-contact text-center">CONTACT US</div>
+      <div class="custom-dash my-3"></div>
+      <div class="text-contact text-center my-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-6 col-sm-12">
+          <div class="py-3 form-input">
+            <input class="form-control" required hide-details placeholder="Name"></input>
+          </div>
+          <div class="py-3 form-input">
+            <input class="form-control" required hide-details placeholder="Email"></input>
+          </div>
+          <div class="py-3 form-input">
+            <input class="form-control" required hide-details placeholder="Subject"></input>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="py-3 form-input">
+            <textarea class="form-control" rows="7" required hide-details placeholder="Message" no-resize></textarea>
+          </div>
+        </div>
+      </div>
+      <button class="button-send btn btn-outline-light" type="button">Send Message</button>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="icon-footer" src="./image/icon_footer.png" width="50%" height="100%" />
+    <div class="text-footer text-center pb-2">© 2021 Axure Themes</div>
+  </div>
+</body>
+
+</html>
+<script>
+  // export default {
+  //   name: 'HomePage',
+  //   methods: {
+  //     open_Sidebar(){
+  //       document.getElementById("side-bar-mobile").style.display = "block";
+  //     },
+  //     close_Sidebar(){
+  //       document.getElementById("side-bar-mobile").style.display = "none";
+  //     }
+  //   }
+  // }
+  function open_Sidebar() {
+    document.getElementById("side-bar-mobile").style.display = "block";
+  }
+
+  function close_Sidebar() {
+    document.getElementById("side-bar-mobile").style.display = "none";
+  }
+</script>
+<style lang="scss">
+  .header-web {
+    height: 50px !important;
+    width: 100%;
+    background-color: black;
+    padding: 15px 175px;
+  }
+
+  @media (max-width: 768px) {
+    .header-web {
+      height: 70px !important;
+      padding: 20px;
+    }
+  }
+
+  .header-web .menu {
+    display: flex;
+    justify-content: space-between !important;
+  }
+
+  .header-web .menu .logo img {
+    width: 50px !important;
+  }
+
+  .header-web .menu .logo .custom-image {
+    object-fit: contain;
+  }
+
+  .header-web .menu .text-menu-mobile {
+    z-index: 10;
+  }
+
+  @media (max-width: 768px) {
+    .header-web .menu .text-menu-mobile {
+      display: block;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .header-web .menu .text-menu-mobile {
+      display: none;
+    }
+  }
+
+  .header-web .menu .text-menu-mobile .icon-menu {
+    color: white;
+    cursor: pointer;
+  }
+
+  .header-web .menu .text-menu-mobile .menu-mobile {
+    z-index: 10 !important;
+    display: none;
+    padding: 30px;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+  }
+
+  .header-web .menu .text-menu-mobile .menu-mobile .icon-tab-menu {
+    font-size: 40px;
+  }
+
+  .header-web .menu .text-menu-mobile .menu-mobile .item-text {
+    color: black;
+    padding: 30px 0px;
+    font-size: 24px;
+    font-weight: 300;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .header-web .menu .text-menu-mobile .menu-mobile .item-text a {
+    color: black;
+    font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    .header-web .menu .text-menu-desktop {
+      display: none;
+    }
+  }
+
+  .header-web .menu .text-menu-desktop .item-text {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 20px;
+    color: #ada8a8;
+  }
+
+  .header-web .menu .text-menu-desktop .item-text:hover {
+    color: white !important;
+  }
+
+  .body-web .banner {
+    background: rgba(0, 0, 0, 0.7) url(./image/u2_state0.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    object-fit: contain;
+  }
+
+  .body-web .banner .item-banner {
+    padding: 100px 170px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .banner .item-banner {
+      padding: 20px;
+    }
+  }
+
+  .body-web .banner .item-banner .logo-baner {
+    object-fit: contain;
+    height: 100px;
+    width: 180px;
+  }
+
+  .body-web .banner .item-banner .text-banner {
+    color: white;
+  }
+
+  .body-web .banner .item-banner .text-banner .text-item1 {
+    font-size: 40px;
+  }
+
+  .body-web .banner .item-banner .text-banner .text-item2 {
+    color: #fff 85;
+    font-size: 20px;
+  }
+
+  .body-web .banner .item-banner .text-banner .custom-border {
+    height: 3px;
+    width: 50px;
+    background-color: white;
+  }
+
+  .body-web .banner .item-banner .text-banner .button-banner {
+    width: 150px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .banner .item-banner .text-banner .button-banner {
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .body-web .banner .item-banner .form-banner {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .banner .item-banner .form-banner {
+      justify-content: center;
+    }
+  }
+
+  .body-web .banner .item-banner .form-banner .custom-form {
+    width: 400px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .banner .item-banner .form-banner .custom-form {
+      padding: 20px;
+    }
+  }
+
+  .body-web .banner .item-banner .form-banner .custom-form .text-item {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .body-web .banner .item-banner .form-banner .custom-form .input-item {
+    padding: 15px 30px;
+  }
+
+  .body-web .banner .item-banner .form-banner .custom-form .input-item .form-control {
+    border: 1px solid #fff !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+
+  .body-web .banner .item-banner .form-banner .custom-form .button-item {
+    background-color: #ff9b51;
+    color: white;
+    padding: 15px 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: bold;
+  }
+
+  .body-web .tab {
+    padding: 100px 170px;
+    background-color: #f5f5f5;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .tab {
+      padding: 5px;
+    }
+  }
+
+  .body-web .tab .custom-tab {
+    display: inline-grid;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .tab .custom-tab {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+
+  .body-web .tab .custom-tab .item-tab1 {
+    color: white;
+    margin-top: 1px;
+    padding: 30px;
+    background-color: #333;
+    cursor: pointer;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .tab .custom-tab .item-tab1 {
+      margin-left: 1px;
+    }
+  }
+
+  .body-web .tab .custom-tab .item-tab2 {
+    color: white;
+    margin-top: 1px;
+    padding: 30px;
+    background-color: #333;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .tab .custom-tab .item-tab2 {
+      margin-left: 1px;
+    }
+  }
+
+  .body-web .tab .custom-tab .item-tab3 {
+    color: white;
+    margin-top: 1px;
+    padding: 30px;
+    background-color: #333;
+    cursor: pointer;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .tab .custom-tab .item-tab3 {
+      margin-left: 1px;
+    }
+  }
+
+  .body-web .tab .custom-tab .active {
+    background-color: #ff8b38;
+  }
+
+  .body-web .tab .custom-text1 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .body-web .tab .custom-text2 {
+    color: #a6a6a6;
+  }
+
+  .body-web .tab .button-download {
+    color: white;
+    background-color: #fc8c3d;
+    border-color: #fc8c3d;
+    padding: 5px 15px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .tab .button-download {
+      margin: auto;
+      display: block;
+    }
+  }
+
+  .body-web .tab .button-download:hover {
+    background-color: white;
+    color: #fc8c3d;
+  }
+
+  .body-web .tab .fix-image {
+    display: flex;
+    justify-content: end;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .tab .fix-image {
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .body-web .tab .fix-image img {
+    width: 350px;
+  }
+
+  .body-web .layout-list-section {
+    padding: 100px 170px;
+    background-color: white;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-list-section {
+      padding: 20px;
+    }
+  }
+
+  .body-web .layout-list-section .form-section {
+    padding: 20px 50px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-list-section .form-section {
+      padding: 20px 30px;
+    }
+  }
+
+  .body-web .layout-list-section .form-section .title-section {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .body-web .layout-list-section .form-section .custom-border-section {
+    height: 3px;
+    width: 100px;
+    background-color: #fc8c3d;
+  }
+
+  .body-web .layout-list-section .form-section .text-section {
+    color: #a6a6a6;
+  }
+
+  .body-web .layout-list-section .form-section .flex-section {
+    display: flex;
+  }
+
+  .body-web .layout-list-section .form-section .flex-section .icon-section {
+    width: 50px;
+    object-fit: contain;
+  }
+
+  .body-web .layout-list-section .form-section .flex-section .item-section {
+    display: inline-grid;
+  }
+
+  .body-web .layout-list-section .form-section .flex-section .item-section .title-item-section {
+    font-weight: 400;
+  }
+
+  .body-web .layout-list-section .form-section .flex-section .item-section .text-item-section {
+    color: #a6a6a6;
+  }
+
+  .body-web .layout-list-section .fix-image-section {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-list-section .fix-image-section {
+      padding: 50px 30px;
+    }
+  }
+
+  .body-web .layout-list-section .fix-image-section img {
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-list-section .fix-image-section img {
+      width: 100% !important;
+    }
+  }
+
+  .body-web .layout-picture-section {
+    padding: 100px 170px;
+    background-color: #f5f5f5;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-picture-section {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-picture-section {
+      padding: 5px;
+    }
+  }
+
+  .body-web .layout-picture-section .form-picture-section {
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-picture-section .form-picture-section {
+      padding: 50px 30px;
+    }
+  }
+
+  .body-web .layout-picture-section .form-picture-section .title-section {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .body-web .layout-picture-section .form-picture-section .custom-border-section {
+    height: 3px;
+    width: 100px;
+    background-color: #fc8c3d;
+  }
+
+  .body-web .layout-picture-section .form-picture-section .text-section {
+    color: #a6a6a6;
+  }
+
+  .body-web .layout-picture-section .image-picture-section {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 50px 0px;
+    padding-right: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-picture-section .image-picture-section {
+      padding: 20px 30px;
+      justify-content: center;
+    }
+  }
+
+  .body-web .layout-picture-section .image-picture-section img {
+    object-fit: cover;
+  }
+
+  .body-web .layout-awesome {
+    padding: 100px 170px;
+    background-color: white;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-awesome {
+      padding: 5px;
+    }
+  }
+
+  .body-web .layout-awesome .form-awesome {
+    display: flex;
+    justify-content: center;
+  }
+
+  .body-web .layout-awesome .form-awesome .title-awesome {
+    font-size: 40px;
+    font-weight: 200;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-awesome .form-awesome .title-awesome {
+      padding: 10px 30px;
+    }
+  }
+
+  .body-web .layout-awesome .form-awesome .custom-dash {
+    height: 3px;
+    width: 100px;
+    background-color: #fc8c3d;
+  }
+
+  .body-web .layout-awesome .form-awesome .text-awesome {
+    color: #a6a6a6;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-awesome .form-awesome .text-awesome {
+      padding: 10px 30px;
+    }
+  }
+
+  .body-web .layout-awesome .item-awesome {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .layout-awesome .item-awesome {
+      padding: 10px 30px;
+    }
+  }
+
+  .body-web .layout-awesome .item-awesome .icon-item {
+    width: 80px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    width: 60px;
+  }
+
+  .body-web .layout-awesome .item-awesome .title-item {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .body-web .layout-awesome .item-awesome .text-item {
+    display: flex;
+    text-align: center;
+    color: #a6a6a6;
+  }
+
+  .body-web .axure-design {
+    background: rgba(0, 0, 0, 0.7) url(./image/u6.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    object-fit: contain;
+    padding: 100px 170px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .axure-design {
+      padding: 20px 30px;
+    }
+  }
+
+  .body-web .axure-design .title {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .body-web .axure-design .custom-dash {
+    height: 3px;
+    width: 100px;
+    background-color: white;
+    margin: auto;
+    display: block;
+  }
+
+  .body-web .axure-design .text {
+    color: #a6a6a6;
+  }
+
+  .body-web .axure-design .button-download {
+    margin: auto;
+    display: block;
+    width: 150px;
+  }
+
+  .body-web .contact-us {
+    padding: 100px 170px;
+    background-color: white;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .contact-us {
+      padding: 20px 30px;
+    }
+  }
+
+  .body-web .contact-us .title-contact {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .body-web .contact-us .custom-dash {
+    height: 3px;
+    width: 100px;
+    background-color: #fc8c3d;
+    margin: auto;
+    display: block;
+  }
+
+  .body-web .contact-us .text-contact {
+    color: #a6a6a6;
+  }
+
+  .body-web .contact-us .form-input {
+    padding-right: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .contact-us .form-input {
+      padding: 30px;
+    }
+  }
+
+  .body-web .contact-us .form-input .form-control {
+    border: 1px solid #fff !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+
+  .body-web .contact-us .button-send {
+    margin: auto;
+    display: block;
+    width: 150px;
+    background-color: #ff8b38;
+  }
+
+  @media (max-width: 768px) {
+    .body-web .contact-us .button-send {
+      margin-bottom: 30px;
+    }
+  }
+
+  .body-web .contact-us .button-send:hover {
+    background-color: white;
+    border-color: #ff8b38;
+    color: #fc8c3d;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: black;
+  }
+
+  .footer .icon-footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    margin: auto;
+    display: block;
+  }
+
+  .footer .text-footer {
+    color: #a6a6a6;
+    font-size: 12px;
+  }
+
+  textarea {
+    resize: none;
+  }
+</style>
